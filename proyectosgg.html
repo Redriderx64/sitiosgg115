@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa de Deforestación en El Salvador</title>
+  <style>
+    body, html {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0;
+      background-color: #333333; /* Cambia el color de fondo a gris oscuro */
+      color: #ffffff; /* Cambia el color de fuente a blanco */
+      font-family: Arial, sans-serif; /* Mantén la fuente Arial o una fuente similar */
+    }
+    
+    p {
+      text-align: justify;
+      margin: 20px; /* Añade un margen de 20px alrededor de los párrafos */
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center; /* Centra los elementos del nav horizontalmente */
+      width: 100%;
+      background-color: #222222; /* Cambia el color de fondo del nav a un tema oscuro */
+      margin: 20px 0; /* Establece un margen de 20px arriba y abajo */
+    }
+    
+    .container {
+      margin: 0 100px; /* Establece un margen de 100px hacia los lados de la pantalla */
+      text-align: center; /* Centra el contenido del contenedor */
+    }
+    
+    nav a {
+      color: #ffffff; /* Cambia el color de fuente de los enlaces de navegación */
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color */
+    }
+    
+    nav a:hover {
+      background-color: #555555; /* Cambia el color de fondo al pasar el cursor sobre los enlaces */
+    }
+
+    .Descripcion  {
+      margin-inline: 200px; /* Añade un margen de 20px alrededor del div "Descripción" */
+      text-align: center; /* Centra el contenido del div "Descripción" */
+    }
+    
+    .Descripcion p {
+      text-align: justify;
+      margin: 20px; /* Añade un margen de 20px alrededor de los párrafos */
+    }
+
+    .Introduccion  {
+      margin-inline: 200px; /* Añade un margen de 20px alrededor del div "Descripción" */
+      text-align: center; /* Centra el contenido del div "Descripción" */
+    }
+    
+    .Introduccion p {
+      text-align: justify;
+      margin: 20px; /* Añade un margen de 20px alrededor de los párrafos */
+    }
+
+    .Introduccion img{
+      align-content: center;
+      margin-top: 40px;
+    }
+
+    .Equipo a{
+    margin-top: 100px;
+    margin-bottom: 100px;
+      align-content: center;
+    }
+
+    .Equipo table{
+      margin: 100px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container" id=contain>
+    <nav>
+      <a class="sr-only" href="#container">Inicio</a>
+      <a class="sr-only" href="#descripcion">Descripción</a>
+      <a class="sr-only" href="#introduccion">Introducción</a>
+      <a class="sr-only" href="#equipo">Equipo</a>
+    </nav>
+    <h1 style="margin-top: 0;">Deforestación en El Salvador</h1>
+    <div class="container">
+      <p>A continuación se muestra un mapa en el cual se dan a conocer los lugares y fechas de deforestación en El Salvador. Al hacer clic en el mapa en un objeto del mapa 
+      se muestra dicha información, la cual puede ser consultada en cualquier sitio del mapa con un clic. El mapa se ha generado gracias a la herramienta QGIS y su complemento 
+      QGIS Cloud, lo cual ha facilitado contener el mapa con información geoespacial.</p>
+      <iframe src="https://qgiscloud.com/jl09002/tercerentrega/" width="800" height="500" frameborder="0"></iframe>
+    </div>
+  </div>
+  <div class="Descripcion" id=descripcion>
+    <h1> Descripción </h1>
+    <img src="ejem01.jpg" alt="desativar ya activar capas">
+    <p>Al activar y desactivar diferentes capas, podemos identificar diversos factores que influyen en la pérdida de vegetación en varias regiones del país. Algunas de las causas incluyen la proximidad a zonas de cultivo, la expansión de áreas residenciales y la facilidad de acceso para la extracción de recursos vegetales destinados a la industria.</p>
+  </div>
+  <div class="Introduccion" id=introduccion>
+    <h1> Introducción </h1>
+    <p>En la era actual, la tecnología de los Sistemas de Información Geográfica (SIG) se ha convertido en una herramienta invaluable para la recopilación, análisis y visualización de datos geoespaciales. Estos sistemas nos permiten comprender y explorar la relación entre diferentes fenómenos geográficos y variables, brindando información crucial para la toma de decisiones y la implementación de estrategias efectivas.
+En el contexto de El Salvador, un país conocido por su rica biodiversidad y su importante cobertura vegetal, la pérdida de vegetación se ha convertido en una preocupación creciente. Con el objetivo de comprender mejor este fenómeno y generar conocimientos para su conservación, se llevó a cabo un proyecto de Sistema de Información Geográfica utilizando la herramienta QGIS.
+El proyecto se centró en recopilar información sobre la pérdida de vegetación en El Salvador, aprovechando las capacidades de QGIS para la elaboración de mapas y la integración de diversas capas de datos geográficos. Para ello, se utilizaron diferentes fuentes de información, incluyendo datos satelitales y datos geográficos vectoriales.
+La información geoespacial obtenida permitió crear un mapa detallado que representa los límites de los departamentos y municipios de El Salvador, proporcionando una estructura geográfica precisa para el análisis de la pérdida de vegetación. Además, se agregó una capa raster satelital para obtener una referencia más actualizada sobre el estado de la vegetación en el país.
+La capa de pérdida vegetal, representada como datos geográficos vectoriales en formato shape, se superpuso en el mapa, lo que permitió identificar las áreas donde se ha producido una disminución significativa en la cobertura vegetal. Esta capa proporciona información cuantitativa y espacial sobre los cambios en la vegetación, lo que resulta fundamental para comprender las causas y consecuencias de la pérdida de vegetación en El Salvador.
+</p>
+<img src="ejem02.jpg" alt="entorno qgis">
+<p>Aca un ejemplo de como se ve el proyecto en elentorno de Qgis.</p>
+  </div>
+<div class="Equipo" id=equipo>
+    <h2 align="center"> Equipo </h2>
+<table align="center">
+  <tbody>
+    <tr>
+      <td align="center">Carnet</td>
+      <td align="center">Apellidos</td>
+      <td align="center">Nombres</td>
+    </tr>
+    <tr>
+      <td align="center">BU03002</td>
+      <td align="center">BARRIOS URIAS</td>
+      <td align="center">FRANCISCO ANTONIO</td>
+    </tr>
+    <tr>
+      <td align="center">JL09002</td>
+      <td align="center">JIMENEZ LARA</td>
+      <td align="center">OSCAR DANIEL</td>
+    </tr>
+    <tr>
+      <td align="center">MC09084</td>
+      <td align="center">MENDOZA CARRANZA</td>
+      <td align="center">ARMANDO ENRRIQUE</td>
+    </tr>
+  </tbody>
+</table>
+<a href="#contain">Al inicio dela pagína</a>
+  </div> 
+</body>
+</html>
+
+
